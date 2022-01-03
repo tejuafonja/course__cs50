@@ -1,0 +1,37 @@
+<!-- <!DOCTYPE html> -->
+
+<!-- <html lang="en">
+    <head>
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <title>hello</title>
+    </head>
+
+    <body>
+        <h1>Hello, Ms {{ lastname }}</h1>
+        <p>How's the weather today, {{ firstname }}</p>
+    </body>
+</html> -->
+
+
+<!-- {% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+{% block body %}
+
+    <form action="/greet" method="get">
+        <input autocomplete="off" autofocus name="name" placeholder="Name" required type="text" >
+        <input type="submit">
+    </form>
+
+{% endblock %} -->
+
+
+{% extends "layout.html" %}
+<!-- {% block title %}Index{% endblock %} -->
+{% block body %}
+
+    <form action="/greet" method="post">
+        <input autocomplete="off" autofocus name="name" placeholder="Name" required type="text" >
+        <input type="submit">
+    </form>
+
+{% endblock %}

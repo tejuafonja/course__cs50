@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>greet</title>
+    </head>
+    <body>
+        <form>
+            <input  autocomplete="off" 
+                    autofocus 
+                    name="q" 
+                    type="text" 
+                    id="name"
+                    placeholder="query">
+            <input type="submit">
+        </form>
+        <script>
+            //function greet(e)
+            //{   
+            //    let name = document.querySelector("#name").value;
+            //    alert("hello, " + name);
+            //    e.preventDefault()
+            //}
+
+            document.querySelector("form").addEventListener("submit", function (e)
+            {   
+                let name = document.querySelector("#name").value;
+                alert("hello, " + name);
+                e.preventDefault()
+            });
+        </script>
+    </body>
+</html>
